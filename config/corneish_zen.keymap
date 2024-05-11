@@ -77,10 +77,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans       &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(TAB)  &kp LC(A)   &trans      &kp LG(D)   &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &kp LC(Z)   &trans      &kp LC(C)   &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                     &trans      &trans     &trans    &trans  &trans  &trans
             >;
         };
 
