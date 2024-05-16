@@ -75,10 +75,10 @@
 
         layer_3 {
             bindings = <
-&trans  &kp N1     &kp N2      &kp N3      &kp N4      &kp N5    &trans  &trans    &kp UP    &kp MINUS  &kp EQUAL  &kp BACKSPACE
-&trans  &kp LC(A)  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
-&trans  &kp LC(Z)  &trans      &kp LC(C)   &kp LC(V)   &trans    &trans  &trans    &trans    &trans     &trans     &trans
-                               &trans      &trans      &trans    &trans  &trans    &trans
+&trans  &kp N1         &kp N2      &kp N3      &kp N4      &kp N5    &trans  &trans    &kp UP    &kp MINUS  &kp EQUAL  &kp BACKSPACE
+&trans  &kp LC(LA(A))  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
+&trans  &kp LC(Z)      &trans      &kp LC(C)   &kp LC(V)   &trans    &trans  &trans    &trans    &trans     &trans     &trans
+                                   &trans      &trans      &trans    &trans  &trans    &trans
             >;
         };
 
