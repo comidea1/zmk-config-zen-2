@@ -33,27 +33,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E           &kp R               &kp T          &kp Y    &kp U        &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S  &kp D           &kp F               &kp G          &kp H    &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
-&kp RCTRL  &kp Z  &kp X  &kp C           &kp V               &kp B          &kp N    &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_SHIFT
-                         &lt 1 LEFT_WIN  &mt LEFT_ALT SPACE  &lt 3 SPACE    &kp RET  &lt 2 SPACE  &lt 4 DEL
+&kp ESC             &kp Q  &kp W  &kp E         &kp R        &kp T          &kp Y        &kp U        &kp I      &kp O    &kp P     &kp BSPC
+&mt LEFT_SHIFT TAB  &kp A  &kp S  &kp D         &kp F        &kp G          &kp H        &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
+&kp RCTRL           &kp Z  &kp X  &kp C         &kp V        &kp B          &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_SHIFT
+                                  &kp LEFT_WIN  &lt 3 SPACE  &lt 1 SPACE    &lt 4 ENTER  &lt 2 SPACE  &kp DEL
             >;
         };
 
-        lower_layer {
-            display-name = "NUMBER";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+        layer_3 {
             bindings = <
-&kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)    &kp LS(N5)      &kp LS(N6)       &kp LS(N7)       &kp LS(N8)       &kp LS(N9)            &kp LS(N0)             &kp BACKSPACE
-&kp LA(TAB)    &kp LC(A)   &kp LC(S)   &kp LG(D)   &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT         &kp DOWN         &kp UP           &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_BACKSLASH)
-&kp LSHFT      &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)     &kp LC(B)       &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD       &trans                 &none
-                                       &kp LGUI    &trans        &kp SPACE       &kp RET          &trans           &kp RALT
+&kp N0  &kp N1         &kp N2      &kp N3      &kp N4      &kp N5    &trans    &trans    &kp UP      &kp MINUS  &kp EQUAL  &kp BACKSPACE
+&trans  &kp LC(LA(A))  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &trans    &kp HOME  &kp LEFT  &kp DOWN    &kp RIGHT  &kp END    &trans
+&trans  &trans         &trans      &trans      &trans      &trans    &trans    &trans    &trans      &trans     &trans     &trans
+                                   &trans      &trans      &trans    &trans    &trans    &kt DELETE
             >;
         };
 
@@ -74,12 +66,20 @@
             >;
         };
 
-        layer_3 {
+        lower_layer {
+            display-name = "NUMBER";
+
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
             bindings = <
-&kp N0  &kp N1         &kp N2      &kp N3      &kp N4      &kp N5    &trans    &trans    &kp UP      &kp MINUS  &kp EQUAL  &kp BACKSPACE
-&trans  &kp LC(LA(A))  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &trans    &kp HOME  &kp LEFT  &kp DOWN    &kp RIGHT  &kp END    &trans
-&trans  &trans         &trans      &trans      &trans      &trans    &trans    &trans    &trans      &trans     &trans     &trans
-                                   &trans      &trans      &trans    &trans    &trans    &kt DELETE
+&kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)    &kp LS(N5)      &kp LS(N6)       &kp LS(N7)       &kp LS(N8)       &kp LS(N9)            &kp LS(N0)             &kp BACKSPACE
+&kp LA(TAB)    &kp LC(A)   &kp LC(S)   &kp LG(D)   &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT         &kp DOWN         &kp UP           &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_BACKSLASH)
+&kp LSHFT      &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)     &kp LC(B)       &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD       &trans                 &none
+                                       &kp LGUI    &trans        &kp SPACE       &kp RET          &trans           &kp RALT
             >;
         };
 
